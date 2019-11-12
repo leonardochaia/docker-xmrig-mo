@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  xmrig-mo:
+    image: lchaia/xmrig-mo:v4.5.0-beta-mo2
+    container_name: xmrig
+    build:
+      context: ./src
+    command: --coin monero --url gulf.moneroocean.stream:10001 --user <your_xmr_address> --pass <worker_id:email>
